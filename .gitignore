@@ -1,2 +1,7 @@
 .env
 .venv/
+test_files/
+
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]

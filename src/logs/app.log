@@ -1,0 +1,78 @@
+2024-09-01 16:56:31,729 - nlp.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/z3rNHS9Y6PV6vbhH8w83Yn-1000-80.jpg.webp
+2024-09-01 16:56:31,729 - nlp.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/z3rNHS9Y6PV6vbhH8w83Yn-1000-80.jpg.webp in 0.00 seconds
+2024-09-01 16:56:32,755 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 16:56:33,204 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 16:56:33,842 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:02:19,136 - nlp.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/z3rNHS9Y6PV6vbhH8w83Yn-1000-80.jpg.webp
+2024-09-01 17:02:19,137 - nlp.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/z3rNHS9Y6PV6vbhH8w83Yn-1000-80.jpg.webp in 0.00 seconds
+2024-09-01 17:02:19,858 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:04:25,507 - nlp.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/z3rNHS9Y6PV6vbhH8w83Yn-1000-80.jpg.webp
+2024-09-01 17:04:25,508 - nlp.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/z3rNHS9Y6PV6vbhH8w83Yn-1000-80.jpg.webp in 0.00 seconds
+2024-09-01 17:04:29,572 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:06:58,176 - nlp.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/z3rNHS9Y6PV6vbhH8w83Yn-1000-80.jpg.webp
+2024-09-01 17:06:58,177 - nlp.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/z3rNHS9Y6PV6vbhH8w83Yn-1000-80.jpg.webp in 0.00 seconds
+2024-09-01 17:07:01,419 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:07:02,085 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:07:31,808 - nlp.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/z3rNHS9Y6PV6vbhH8w83Yn-1000-80.jpg.webp
+2024-09-01 17:07:31,809 - nlp.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/z3rNHS9Y6PV6vbhH8w83Yn-1000-80.jpg.webp in 0.00 seconds
+2024-09-01 17:07:35,447 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:07:37,712 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:07:38,337 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:11:12,453 - nlp.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/z3rNHS9Y6PV6vbhH8w83Yn-1000-80.jpg.webp
+2024-09-01 17:11:12,454 - nlp.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/z3rNHS9Y6PV6vbhH8w83Yn-1000-80.jpg.webp in 0.00 seconds
+2024-09-01 17:11:14,771 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:11:18,259 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:11:21,288 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:11:24,243 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:13:23,360 - nlp.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/z3rNHS9Y6PV6vbhH8w83Yn-1000-80.jpg.webp
+2024-09-01 17:13:23,361 - nlp.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/z3rNHS9Y6PV6vbhH8w83Yn-1000-80.jpg.webp in 0.00 seconds
+2024-09-01 17:13:27,106 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:13:30,505 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:13:33,470 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:13:36,363 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:13:37,270 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:13:37,771 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:13:38,320 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:13:38,792 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:13:39,261 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:17:26,005 - utils.img_to_base - INFO - Starting conversion of image: test_files/sunny-beach.png
+2024-09-01 17:17:26,005 - utils.img_to_base - ERROR - Error converting image: test_files/sunny-beach.png, Error: [Errno 2] No such file or directory: 'test_files/sunny-beach.png'
+2024-09-01 17:18:08,152 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-01 17:18:08,163 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-01 17:18:13,071 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:18:18,545 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:18:23,550 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:18:28,916 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:18:30,457 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:18:30,916 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:18:31,566 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:18:32,173 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:18:32,586 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:42:38,631 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-01 17:42:38,637 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-01 17:42:41,504 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:42:52,794 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:42:57,319 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:43:02,521 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:43:11,184 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:44:16,227 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-01 17:44:16,233 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-01 17:44:38,579 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:44:44,506 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:44:49,613 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:45:00,179 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:46:56,157 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-01 17:46:56,163 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-01 17:46:59,075 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:47:08,924 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:47:29,423 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:47:29,911 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:47:30,501 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:53:09,168 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-01 17:53:09,174 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-01 17:53:12,346 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:53:26,170 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:53:46,194 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:54:04,126 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:54:09,473 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-01 17:54:15,041 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

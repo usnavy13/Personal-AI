@@ -3,34 +3,52 @@
 
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
-from tools import tools
+from .tools import tools
+from .prompts import sys_prompt
+import datetime
+import os
+from dotenv import load_dotenv
 
-def call_llm(query: str) -> str:
-    llm = ChatOpenAI(model="gpt-4o-mini")
-    llm_with_tools = llm.bind_tools(tools)
+load_dotenv()
 
-    messages = [HumanMessage(content=query)]
+class LLMConversation:
+    def __init__(self, model="gpt-4o-mini"):
+        self.llm = ChatOpenAI(model=model)
+        self.llm_with_tools = self.llm.bind_tools(tools)
+        self.messages = [SystemMessage(content=sys_prompt.format(user_name=os.getenv("USER_NAME"), date=datetime.datetime.now().strftime("%Y-%m-%d")))]
 
-    while True:
-        ai_msg = llm_with_tools.invoke(messages)
-        messages.append(ai_msg)
+    def add_message(self, content: str, image: str = 'No Image'):
+        if image != 'No Image':
+            self.messages.append(HumanMessage(content=[
+                {"type": "text", "text": content},
+                {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{image}"}},
+            ]))
+        else:
+            self.messages.append(HumanMessage(content=content))
 
-        if not ai_msg.tool_calls:
-            break
+    def call_llm(self) -> str:
+        while True:
+            ai_msg = self.llm_with_tools.invoke(self.messages)
+            self.messages.append(ai_msg)
 
-        for tool_call in ai_msg.tool_calls:
-            tool_name = tool_call["name"].lower()
-            selected_tool = next((tool for tool in tools if tool.name.lower() == tool_name), None)
-            if selected_tool:
-                tool_msg = selected_tool.invoke(tool_call)
-                messages.append(tool_msg)
-            else:
-                print(f"Warning: Tool '{tool_name}' not found")
+            if not ai_msg.tool_calls:
+                break
 
-    return ai_msg.content
+            for tool_call in ai_msg.tool_calls:
+                tool_name = tool_call["name"].lower()
+                selected_tool = next((tool for tool in tools if tool.name.lower() == tool_name), None)
+                if selected_tool:
+                    tool_msg = selected_tool.invoke(tool_call)
+                    self.messages.append(tool_msg)
+                else:
+                    print(f"Warning: Tool '{tool_name}' not found")
+
+        return ai_msg.content
 
 # Example usage
-result = call_llm("What is 3 * 12? then subtract 22 from the result")
-print(result)
+# conversation = LLMConversation()
+# conversation.add_message("Hello, how are you?")
+# response = conversation.call_llm()
+# print(response)
 
 # %%
