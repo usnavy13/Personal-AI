@@ -3,3 +3,4 @@ openai
 termcolor
 langchain
 langchain-openai
+pyaudio

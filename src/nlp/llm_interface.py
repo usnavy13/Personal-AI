@@ -8,6 +8,9 @@ from .prompts import sys_prompt
 import datetime
 import os
 from dotenv import load_dotenv
+import logging
+
+logger = logging.getLogger(__name__)
 
 load_dotenv()
 
@@ -41,7 +44,7 @@ class LLMConversation:
                     tool_msg = selected_tool.invoke(tool_call)
                     self.messages.append(tool_msg)
                 else:
-                    print(f"Warning: Tool '{tool_name}' not found")
+                    logger.warning(f"Warning: Tool '{tool_name}' not found")
 
         return ai_msg.content
 

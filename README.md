@@ -9,3 +9,7 @@ Desired Logic:
 4. Pass the transcribed text to the LLM
 
 5. LLM response converted to audio and played through speaker
+
+
+Install dependencies:
+sudo apt-get install portaudio19-dev
