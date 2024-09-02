@@ -13,8 +13,6 @@ from queue import Queue
 
 # Load environment variables
 load_dotenv()
-ACTIVATION_WORD = os.getenv("ACTIVATION_WORD")
-
 # Initialize OpenAI client
 client = OpenAI()
 
@@ -117,24 +115,13 @@ def record_audio():
         transcription = transcription_queue.get()
         print(f"Transcription: {transcription}")
 
-        # Check for activation word
-        if ACTIVATION_WORD.lower() in transcription.lower():
-            # Save the recorded audio to a file
-            wf = wave.open("recorded_audio.wav", 'wb')
-            wf.setnchannels(CHANNELS)
-            wf.setsampwidth(p.get_sample_size(FORMAT))
-            wf.setframerate(RATE)
-            wf.writeframes(b''.join(audio))
-            wf.close()
-            print("* Audio saved to 'recorded_audio.wav'")
-            # Remove the break statement to continue listening
-            # break
-        else:
-            print("* Activation word not detected, continuing to listen...")
+        # Check for "stop listening" phrase
+        if "stop listening" in transcription.lower():
+            print("* Stop listening command detected")
+            return None
 
-        # Reset the pre-record buffer and audio list for the next recording
-        pre_record_buffer.clear()
-        audio.clear()
+        # Return the transcription
+        return transcription
 
     stream.stop_stream()
     stream.close()
