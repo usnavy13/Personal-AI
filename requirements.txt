@@ -4,3 +4,5 @@ termcolor
 langchain
 langchain-openai
 pyaudio
+picamera
+pygame
