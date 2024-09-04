@@ -4,4 +4,6 @@ test_files/
 
 # Ignore Python bytecode files
 __pycache__/
-*.py[cod]
+*.pyc
+*/__pycache__/
+**/__pycache__/

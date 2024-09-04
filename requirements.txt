@@ -3,6 +3,5 @@ openai
 termcolor
 langchain
 langchain-openai
-pyaudio
-picamera
-pygame
+langchain-anthropic
+langchain-google-genai
