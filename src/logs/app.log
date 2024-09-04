@@ -250,3 +250,144 @@
 2024-09-04 17:24:44,801 - audio.microphone - INFO - Transcription took 0.9302711486816406 seconds
 2024-09-04 17:24:45,215 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2024-09-04 17:24:45,844 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 18:55:51,066 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-04 18:55:51,094 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.03 seconds
+2024-09-04 18:56:09,598 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 18:56:09,599 - audio.microphone - INFO - Transcription took 0.7128071784973145 seconds
+2024-09-04 18:56:25,208 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 18:56:25,208 - audio.microphone - INFO - Transcription took 0.8979766368865967 seconds
+2024-09-04 18:56:26,033 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 18:56:26,428 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 18:56:27,088 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:03:17,600 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-04 19:03:17,606 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-04 19:03:26,167 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:03:26,168 - audio.microphone - INFO - Transcription took 1.473778486251831 seconds
+2024-09-04 19:03:27,217 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:03:27,764 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:03:28,888 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:03:42,353 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:03:42,353 - audio.microphone - INFO - Transcription took 0.8343219757080078 seconds
+2024-09-04 19:03:50,428 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:03:50,429 - audio.microphone - INFO - Transcription took 0.871912956237793 seconds
+2024-09-04 19:03:51,172 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:03:51,899 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:04:33,988 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-04 19:04:33,994 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-04 19:04:41,236 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:04:41,238 - audio.microphone - INFO - Transcription took 0.7120275497436523 seconds
+2024-09-04 19:04:43,027 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-09-04 19:04:43,334 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 400 Bad Request"
+2024-09-04 19:05:24,143 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-04 19:05:24,149 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-04 19:05:30,903 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:05:30,904 - audio.microphone - INFO - Transcription took 0.8816473484039307 seconds
+2024-09-04 19:05:33,099 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-09-04 19:05:33,641 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 400 Bad Request"
+2024-09-04 19:05:53,221 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-04 19:05:53,238 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.02 seconds
+2024-09-04 19:05:57,466 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:05:57,467 - audio.microphone - INFO - Transcription took 0.677696943283081 seconds
+2024-09-04 19:05:59,571 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-09-04 19:05:59,828 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 400 Bad Request"
+2024-09-04 19:06:06,825 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-04 19:06:06,831 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-04 19:06:11,149 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:06:11,151 - audio.microphone - INFO - Transcription took 0.76041579246521 seconds
+2024-09-04 19:06:17,442 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:06:17,442 - audio.microphone - INFO - Transcription took 0.656212568283081 seconds
+2024-09-04 19:06:18,266 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:06:18,578 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 400 Bad Request"
+2024-09-04 19:08:35,746 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-04 19:08:35,752 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-04 19:08:40,949 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:08:40,951 - audio.microphone - INFO - Transcription took 0.7879941463470459 seconds
+2024-09-04 19:08:47,521 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:08:47,522 - audio.microphone - INFO - Transcription took 0.8426947593688965 seconds
+2024-09-04 19:08:49,828 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-09-04 19:08:50,542 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:09:11,630 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:09:11,631 - audio.microphone - INFO - Transcription took 0.8707160949707031 seconds
+2024-09-04 19:09:13,654 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2024-09-04 19:09:15,086 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:23:07,533 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-04 19:23:07,543 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-04 19:23:14,208 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:23:14,210 - audio.microphone - INFO - Transcription took 2.2605786323547363 seconds
+2024-09-04 19:23:15,054 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:23:16,307 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:23:28,922 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:23:28,922 - audio.microphone - INFO - Transcription took 0.8231494426727295 seconds
+2024-09-04 19:23:29,575 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:23:30,579 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:23:31,296 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:25:01,762 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-04 19:25:01,769 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-04 19:25:06,317 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:25:06,319 - audio.microphone - INFO - Transcription took 0.8051533699035645 seconds
+2024-09-04 19:25:13,590 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:25:13,598 - audio.microphone - INFO - Transcription took 0.7218770980834961 seconds
+2024-09-04 19:25:14,316 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:25:15,299 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:25:16,530 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:25:32,693 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:25:32,693 - audio.microphone - INFO - Transcription took 1.2571449279785156 seconds
+2024-09-04 19:25:33,092 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:25:33,302 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 400 Bad Request"
+2024-09-04 19:26:49,592 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-04 19:26:49,598 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-04 19:27:09,393 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-04 19:27:09,400 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-04 19:27:16,779 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:27:16,781 - audio.microphone - INFO - Transcription took 1.6012828350067139 seconds
+2024-09-04 19:27:17,691 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:27:18,426 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:27:19,051 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:27:30,006 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:27:30,008 - audio.microphone - INFO - Transcription took 0.7582399845123291 seconds
+2024-09-04 19:27:30,665 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:27:31,542 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:27:32,178 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:27:44,634 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:27:44,635 - audio.microphone - INFO - Transcription took 0.9388926029205322 seconds
+2024-09-04 19:27:46,356 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:27:47,477 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:28:37,848 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:28:37,849 - audio.microphone - INFO - Transcription took 1.50290846824646 seconds
+2024-09-04 19:28:39,808 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:28:40,775 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:35:40,065 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-04 19:35:40,072 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-04 19:35:45,209 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:35:45,211 - audio.microphone - INFO - Transcription took 0.7444424629211426 seconds
+2024-09-04 19:35:45,917 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:35:46,673 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:35:57,815 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:35:57,815 - audio.microphone - INFO - Transcription took 0.7287006378173828 seconds
+2024-09-04 19:35:58,873 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:35:59,800 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:36:00,465 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:36:14,204 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:36:14,205 - audio.microphone - INFO - Transcription took 0.7197315692901611 seconds
+2024-09-04 19:36:15,471 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:36:16,382 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:37:08,918 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-04 19:37:08,924 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-04 19:37:15,523 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:37:15,524 - audio.microphone - INFO - Transcription took 1.8176639080047607 seconds
+2024-09-04 19:37:16,230 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:37:16,786 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:37:22,246 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:37:22,247 - audio.microphone - INFO - Transcription took 0.6538136005401611 seconds
+2024-09-04 19:37:23,017 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:37:23,878 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:37:24,507 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-04 19:37:34,573 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:37:34,574 - audio.microphone - INFO - Transcription took 0.7638673782348633 seconds
+2024-09-04 19:39:06,476 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-04 19:39:06,482 - utils.img_to_base - INFO - Successfully converted image: /home/pi/ai_assistant/test_files/sunny-beach.png in 0.01 seconds
+2024-09-04 19:39:12,210 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2024-09-04 19:39:12,212 - audio.microphone - INFO - Transcription took 1.1490917205810547 seconds
+2024-09-04 19:39:13,059 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:39:13,898 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-04 19:39:14,536 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
