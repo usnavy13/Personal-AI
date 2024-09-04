@@ -4,6 +4,6 @@ import logging
 
 load_dotenv()
 # Set up logging
-log_file_path = 'logs/app.log'
+log_file_path = '/home/pi/Personal-AI/src/logs/app.log'
 logger = logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', filename=log_file_path, filemode='a')
 

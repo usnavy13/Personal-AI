@@ -6,8 +6,8 @@ from langchain_anthropic import ChatAnthropic
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_openai import AzureChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
-from tools import tools
-from prompts import sys_prompt
+from .tools import tools
+from .prompts import sys_prompt
 import datetime
 import os
 from dotenv import load_dotenv

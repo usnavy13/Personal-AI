@@ -1,11 +1,23 @@
 #%%
 import sounddevice as sd
 import soundfile as sf
-import numpy as np
+import openai
+from pathlib import Path
 
-def play_sound(file_path, volume=1.0, device=None):
+def speak(text, volume=5.0, device=2):
+    client = openai.Client()
+    speech_file_path = "/home/pi/ai_assistant/temp_audio.wav"
+
+    # Generate speech from text
+    with client.audio.speech.with_streaming_response.create(
+        model="tts-1",
+        voice="alloy",
+        input=text
+    ) as response:
+        response.stream_to_file(speech_file_path)
+
     # Read the audio file
-    data, fs = sf.read(file_path, dtype='float32')
+    data, fs = sf.read(speech_file_path, dtype='float32')
     
     # Adjust the volume
     data = data * volume
@@ -19,16 +31,7 @@ def play_sound(file_path, volume=1.0, device=None):
 
 # Example usage
 if __name__ == "__main__":
-    # List of devices to try (excluding device 1 which is input-only)
-    devices_to_try = [0, 2, 3, 4, 5, 6, 7, 8]
-    volumes_to_try = [1.0, 5.0, 10.0]
-
-    for device in devices_to_try:
-        for volume in volumes_to_try:
-            print(f"\nTrying device: {device}, volume: {volume}")
-            play_sound("/home/pi/ai_assistant/src/audio/temp_audio.wav", volume=volume, device=device)
-            input("Press Enter to continue to the next test...")
+    speak("The quick brown fox jumped over the lazy dog.")
 
 
 # %%
- 
