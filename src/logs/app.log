@@ -391,3 +391,25 @@
 2024-09-04 19:39:13,059 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2024-09-04 19:39:13,898 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2024-09-04 19:39:14,536 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/audio/speech "HTTP/1.1 200 OK"
+2024-09-05 09:28:32,050 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 2
+2024-09-05 09:28:32,050 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 7
+2024-09-05 09:28:32,050 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 12
+2024-09-05 09:28:32,050 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 18
+2024-09-05 09:28:32,050 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 24
+2024-09-05 09:28:32,050 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 30
+2024-09-05 09:28:32,050 - utils.img_to_base - INFO - Starting conversion of image: /home/pi/ai_assistant/test_files/sunny-beach.png
+2024-09-05 09:28:32,058 - utils.img_to_base - ERROR - Error converting image: /home/pi/ai_assistant/test_files/sunny-beach.png, Error: [Errno 2] No such file or directory: '/home/pi/ai_assistant/test_files/sunny-beach.png'
+2024-09-05 09:28:53,146 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 2
+2024-09-05 09:28:53,146 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 7
+2024-09-05 09:28:53,146 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 12
+2024-09-05 09:28:53,146 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 18
+2024-09-05 09:28:53,146 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 24
+2024-09-05 09:28:53,146 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 30
+2024-09-05 09:29:56,071 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 2
+2024-09-05 09:29:56,071 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 7
+2024-09-05 09:29:56,071 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 12
+2024-09-05 09:29:56,071 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 18
+2024-09-05 09:29:56,071 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 24
+2024-09-05 09:29:56,071 - dotenv.main - WARNING - Python-dotenv could not parse statement starting at line 30
+2024-09-05 09:32:16,502 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2024-09-05 09:32:27,958 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

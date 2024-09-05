@@ -1,63 +1,46 @@
 #%%
 from langchain_core.tools import tool
+from langchain_community.agent_toolkits import GmailToolkit
 import requests
 import os
 
 @tool
-def add(a: int, b: int) -> int:
-    """Add two integers.
+def get_weather(zip_code: str) -> str:
+    """Get current weather conditions for a given US zip code.
 
     Args:
-        a: First integer
-        b: Second integer
-    """
-    print(f"Adding {a} and {b}")
-    return a + b
-
-@tool
-def multiply(a: int, b: int) -> int:
-    """Multiply two integers.
-
-    Args:
-        a: First integer
-        b: Second integer
-    """
-    print(f"Multiplying {a} and {b}")
-    return a * b
-
-@tool
-def subtract(a: int, b: int) -> int:
-    """Subtract two integers.
-
-    Args:
-        a: First integer
-        b: Second integer
-    """
-    print(f"Subtracting {b} from {a}")
-    return a - b
-
-@tool
-def get_weather(latitude: float, longitude: float) -> str:
-    """Get current weather conditions for a given location.
-
-    Args:
-        latitude: Latitude of the location
-        longitude: Longitude of the location
+        zip_code: US zip code of the location
     """
     api_key = os.environ.get('AZURE_MAPS_KEY')
-    print('Searching for weather at', latitude, longitude)
+    print('Searching for weather at zip code', zip_code)
     if not api_key:
         raise ValueError("AZURE_MAPS_KEY environment variable is not set")
 
-    url = f"https://atlas.microsoft.com/weather/currentConditions/json?api-version=1.1&query={latitude},{longitude}&subscription-key={api_key}&unit=imperial"
+    # First, convert zip code to coordinates
+    geocode_url = f"https://atlas.microsoft.com/search/address/json?api-version=1.0&query={zip_code}&countrySet=US&subscription-key={api_key}"
+    geocode_response = requests.get(geocode_url)
     
-    response = requests.get(url)
-    if response.status_code == 200:
-        return response.json()
-    else:
-        return f"Error fetching weather data: {response.status_code}"
+    if geocode_response.status_code != 200:
+        return f"Error geocoding zip code: {geocode_response.status_code}"
+    
+    geocode_data = geocode_response.json()
+    if not geocode_data['results']:
+        return f"No location found for zip code {zip_code}"
+    
+    latitude = geocode_data['results'][0]['position']['lat']
+    longitude = geocode_data['results'][0]['position']['lon']
 
-tools = [add, multiply, subtract, get_weather]
+    # Now get the weather using the coordinates
+    weather_url = f"https://atlas.microsoft.com/weather/currentConditions/json?api-version=1.1&query={latitude},{longitude}&subscription-key={api_key}&unit=imperial"
+    
+    weather_response = requests.get(weather_url)
+    if weather_response.status_code == 200:
+        return weather_response.json()
+    else:
+        return f"Error fetching weather data: {weather_response.status_code}"
+
+tools = [get_weather]
+#tools.append(GmailToolkit().get_tools())
 
 #print(get_weather(47.60357, -122.32945))
 
