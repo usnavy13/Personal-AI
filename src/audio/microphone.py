@@ -10,6 +10,7 @@ import os
 import time
 import threading
 from queue import Queue
+import io
 
 # Load environment variables
 load_dotenv()
@@ -38,28 +39,33 @@ def is_silent(data):
     return max(data) < THRESHOLD
 
 def transcribe_audio(audio_data):
-    audio_file = wave.open("temp_audio.wav", 'wb')
-    audio_file.setnchannels(CHANNELS)
-    audio_file.setsampwidth(pyaudio.PyAudio().get_sample_size(FORMAT))
-    audio_file.setframerate(RATE)
-    audio_file.writeframes(b''.join(audio_data))
-    audio_file.close()
+    # Create an in-memory binary stream
+    audio_buffer = io.BytesIO()
+    
+    # Write audio data to the buffer
+    with wave.open(audio_buffer, 'wb') as wav_file:
+        wav_file.setnchannels(CHANNELS)
+        wav_file.setsampwidth(pyaudio.PyAudio().get_sample_size(FORMAT))
+        wav_file.setframerate(RATE)
+        wav_file.writeframes(b''.join(audio_data))
+    
+    # Reset buffer position to the beginning
+    audio_buffer.seek(0)
 
-    with open("temp_audio.wav", "rb") as audio_file:
-        start_time = time.time()  # Start timing
-        
-        transcription = client.audio.transcriptions.create(
-            model="whisper-1",
-            language="en",
-            file=audio_file
-        )
-        
-        end_time = time.time()  # End timing
-        
-        transcription_time = end_time - start_time
-        logger.info(f"Transcription took {transcription_time} seconds")
-        
-        return transcription.text
+    start_time = time.time()  # Start timing
+    
+    transcription = client.audio.transcriptions.create(
+        model="whisper-1",
+        language="en",
+        file=("audio.wav", audio_buffer)
+    )
+    
+    end_time = time.time()  # End timing
+    
+    transcription_time = end_time - start_time
+    logger.info(f"Transcription took {transcription_time} seconds")
+    
+    return transcription.text
 
 def transcribe_audio_in_background(audio_data, transcription_queue):
     transcription = transcribe_audio(audio_data)

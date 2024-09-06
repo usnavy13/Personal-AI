@@ -6,11 +6,9 @@ from audio.microphone import listen
 from audio.speaker import speak
 import os
 from dotenv import load_dotenv
-import time
+
 
 load_dotenv()
-
-img = image_to_base64("/home/pi/ai_assistant/test_files/sunny-beach.png")
 
 ACTIVATION_WORD = os.getenv("ACTIVATION_WORD")
 CONVERSATION_ACTIVE = False
@@ -28,7 +26,6 @@ while True:
             print("LLM: ", response, flush=True)
             speak(response)
         elif CONVERSATION_ACTIVE:
-            # Continue the active conversation
             conversation.add_message(user_input)
             response = conversation.call_llm()
             print("LLM: ", response, flush=True)
@@ -44,3 +41,5 @@ while True:
         else:
             print("No input detected. Listening again...")
 
+
+# %%

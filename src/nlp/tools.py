@@ -39,7 +39,15 @@ def get_weather(zip_code: str) -> str:
     else:
         return f"Error fetching weather data: {weather_response.status_code}"
 
-tools = [get_weather]
+@tool
+def capture_image():
+    """Capture an image from your camera
+    Use this if the user asks you to look at something or you need to see something to understand the user's question.
+    You may need to take a new picture for follow up questions"""
+    return "SEE MESSAGE"
+
+
+tools = [get_weather, capture_image]
 #tools.append(GmailToolkit().get_tools())
 
 #print(get_weather(47.60357, -122.32945))

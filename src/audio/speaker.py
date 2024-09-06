@@ -2,7 +2,7 @@
 import sounddevice as sd
 import soundfile as sf
 import openai
-from pathlib import Path
+import io
 import os
 from dotenv import load_dotenv
 
@@ -17,7 +17,6 @@ def speak(text):
     if text == '':
         return None
     client = openai.Client()
-    speech_file_path = "/home/pi/ai_assistant/temp_audio.wav"
 
     # Generate speech from text
     with client.audio.speech.with_streaming_response.create(
@@ -25,10 +24,11 @@ def speak(text):
         voice=VOICE,
         input=text
     ) as response:
-        response.stream_to_file(speech_file_path)
+        # Read the audio data into memory
+        audio_data = io.BytesIO(response.read())
 
-    # Read the audio file
-    data, fs = sf.read(speech_file_path, dtype='float32')
+    # Read the audio data from memory
+    data, fs = sf.read(audio_data, dtype='float32')
     
     # Adjust the volume
     data = data * VOLUME

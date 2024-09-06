@@ -12,6 +12,7 @@ import datetime
 import os
 from dotenv import load_dotenv
 import logging
+from vision.camera import capture_image_base64
 
 logger = logging.getLogger(__name__)
 
@@ -23,6 +24,7 @@ class LLMConversation:
         self.llm = self._initialize_llm()
         self.llm_with_tools = self.llm.bind_tools(tools)
         self.messages = [SystemMessage(content=sys_prompt.format(user_name=os.getenv("USER_NAME"), date=datetime.datetime.now().strftime("%Y-%m-%d")))]
+        self.image_captured = False
 
     def _initialize_llm(self):
         if self.provider == "openai":
@@ -50,6 +52,7 @@ class LLMConversation:
             self.messages.append(HumanMessage(content=content))
 
     def call_llm(self) -> str:
+        self.image_captured = False
         while True:
             ai_msg = self.llm_with_tools.invoke(self.messages)
             self.messages.append(ai_msg)
@@ -63,6 +66,9 @@ class LLMConversation:
                 if selected_tool:
                     tool_msg = selected_tool.invoke(tool_call)
                     self.messages.append(tool_msg)
+                    if tool_name == "capture_image":
+                        self.image_captured = True
+                        self.add_message("Image from webcam", image=capture_image_base64())
                 else:
                     logger.warning(f"Warning: Tool '{tool_name}' not found")
 
