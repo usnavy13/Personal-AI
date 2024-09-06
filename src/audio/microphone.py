@@ -31,7 +31,7 @@ RATE = 44100  # Match the default sample rate of the device
 THRESHOLD = int(os.getenv("THRESHOLD", "1000"))
 SILENCE_LIMIT = float(os.getenv("SILENCE_LIMIT", "2"))
 PRE_RECORD_SECONDS = float(os.getenv("PRE_RECORD_SECONDS", "0.5"))
-DEVICE_INDEX = 1  # UM02: USB Audio device
+DEVICE_INDEX = 2  # UM02: USB Audio device
 LISTENING_TIME = int(os.getenv("LISTENING_TIME", "5"))
 
 def is_silent(data):
@@ -171,7 +171,22 @@ def listen():
     finally:
         cleanup(stream, p)
 
+def list_audio_devices():
+    p = pyaudio.PyAudio()
+    info = p.get_host_api_info_by_index(0)
+    num_devices = info.get('deviceCount')
+    
+    for i in range(num_devices):
+        device_info = p.get_device_info_by_host_api_device_index(0, i)
+        device_name = device_info.get('name')
+        max_input_channels = device_info.get('maxInputChannels')
+        if max_input_channels > 0:
+            print(f"Input Device {i}: {device_name}")
+    
+    p.terminate()
+
 if __name__ == "__main__":
+    list_audio_devices()  # Add this line to print the devices when the script is run
     while True:
         result = listen()
         if result:
