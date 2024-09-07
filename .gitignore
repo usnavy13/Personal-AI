@@ -7,4 +7,7 @@ __pycache__/
 *.pyc
 */__pycache__/
 **/__pycache__/
-logs/app.log
+
+# Ignore all log files
+*.log
+**/*.log
