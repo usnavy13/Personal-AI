@@ -9,5 +9,5 @@ __pycache__/
 **/__pycache__/
 
 # Ignore all log files
-*.log
-**/*.log
+src/logs/*
+!src/logs/
